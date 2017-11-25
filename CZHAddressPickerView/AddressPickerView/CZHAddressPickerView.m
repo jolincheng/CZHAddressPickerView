@@ -210,6 +210,20 @@ typedef NS_ENUM(NSInteger, CZHAddressPickerViewType) {
     //区
     self.areaArray = [self getAreaNamesFromProvinceIndex:0 cityIndex:0];
 
+    //如果没有传入默认选中的省市区，默认选中各个数组的第一个
+    if (!self.selectProvince.length) {
+        self.selectProvince = [self.provinceArray firstObject];
+    }
+    if (!self.selectCity.length) {
+        self.selectCity = [self.cityArray firstObject];
+    }
+    if (!self.selectArea.length) {
+        self.selectArea = [self.areaArray firstObject];
+    }
+    
+    
+    
+    
 
     NSInteger provinceIndex = 0;
     NSInteger cityIndex = 0;
