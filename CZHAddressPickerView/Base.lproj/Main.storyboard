@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YV-ER-5w6">
+                                <rect key="frame" x="62.5" y="35" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.91144511421319796" green="0.91144511421319796" blue="0.91144511421319796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ToA-OW-veV"/>
+                                    <constraint firstAttribute="width" constant="250" id="vd0-kf-lwU"/>
+                                </constraints>
+                                <state key="normal" title="只用省份,下次使用默认第一个"/>
+                                <connections>
+                                    <action selector="provinceWithoutInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6F-O7-LbG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXX-bM-4a2">
+                                <rect key="frame" x="62.5" y="95" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.91144511421319796" green="0.91144511421319796" blue="0.91144511421319796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nYw-aV-yK5"/>
+                                    <constraint firstAttribute="width" constant="250" id="rYo-SK-kvZ"/>
+                                </constraints>
+                                <state key="normal" title="只用省份,下次使用上一次选中的"/>
+                                <connections>
+                                    <action selector="provinceWithInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thm-Fj-B4b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-6p-cyl">
+                                <rect key="frame" x="62.5" y="155" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.91144511419999996" green="0.91144511419999996" blue="0.91144511419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Ax-mz-u8w"/>
+                                    <constraint firstAttribute="width" constant="250" id="p60-2I-IxV"/>
+                                </constraints>
+                                <state key="normal" title="省份和城市,下次使用默认第一个"/>
+                                <connections>
+                                    <action selector="cityWithoutInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8lO-gK-vrd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58a-yY-6z0">
+                                <rect key="frame" x="62.5" y="215" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.91144511419999996" green="0.91144511419999996" blue="0.91144511419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DGf-H2-plU"/>
+                                    <constraint firstAttribute="width" constant="250" id="krx-RZ-wp5"/>
+                                </constraints>
+                                <state key="normal" title="省份和城市,下次使用上次选中的"/>
+                                <connections>
+                                    <action selector="cityWithInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSP-rP-6aw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81Q-QM-7i3">
+                                <rect key="frame" x="62.5" y="275" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.91144511419999996" green="0.91144511419999996" blue="0.91144511419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="jlZ-Zi-IAk"/>
+                                    <constraint firstAttribute="height" constant="40" id="lZc-Cs-bB6"/>
+                                </constraints>
+                                <state key="normal" title="省份.城市.地区,下次使用默认第一个"/>
+                                <connections>
+                                    <action selector="areaWithoutInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEx-dh-Gsd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vZ-a2-Lck">
+                                <rect key="frame" x="62.5" y="335" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.91144511419999996" green="0.91144511419999996" blue="0.91144511419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SxZ-vc-5aF"/>
+                                    <constraint firstAttribute="width" constant="250" id="gGW-5m-9cw"/>
+                                </constraints>
+                                <state key="normal" title="省份.城市.地区,下次使用上次选中的"/>
+                                <connections>
+                                    <action selector="areaWithInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICK-zl-Pp2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5vZ-a2-Lck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6AX-AW-Ept"/>
+                            <constraint firstItem="SSd-6p-cyl" firstAttribute="top" secondItem="rXX-bM-4a2" secondAttribute="bottom" constant="20" id="Cfp-GX-rtb"/>
+                            <constraint firstItem="rXX-bM-4a2" firstAttribute="top" secondItem="4YV-ER-5w6" secondAttribute="bottom" constant="20" id="QTv-t0-5sK"/>
+                            <constraint firstItem="SSd-6p-cyl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wch-wX-HZV"/>
+                            <constraint firstItem="4YV-ER-5w6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XCW-gD-O56"/>
+                            <constraint firstItem="81Q-QM-7i3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bFP-RY-vWE"/>
+                            <constraint firstItem="81Q-QM-7i3" firstAttribute="top" secondItem="58a-yY-6z0" secondAttribute="bottom" constant="20" id="erm-rU-i6I"/>
+                            <constraint firstItem="4YV-ER-5w6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="hSN-NK-T1f"/>
+                            <constraint firstItem="rXX-bM-4a2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i6M-9X-Msc"/>
+                            <constraint firstItem="58a-yY-6z0" firstAttribute="top" secondItem="SSd-6p-cyl" secondAttribute="bottom" constant="20" id="jMH-sK-G6G"/>
+                            <constraint firstItem="58a-yY-6z0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="svi-hU-zps"/>
+                            <constraint firstItem="5vZ-a2-Lck" firstAttribute="top" secondItem="81Q-QM-7i3" secondAttribute="bottom" constant="20" id="y5t-7o-BJC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
